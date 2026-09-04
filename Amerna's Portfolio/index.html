@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Johnmarc's learning and software development portfolio">
+  <title>Amerna's Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Main navigation">
+      <a class="logo" href="#home">JV<span>.</span></a>
+
+      <button
+        type="button"
+        class="menu-toggle"
+        aria-label="Open navigation menu"
+        aria-expanded="false">
+        ☰
+      </button>
+
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#activities">Activities</a>
+        <a href="#quizzes">Quizzes</a>
+        <a href="#warlab">WAR/Lab Rep</a>
+        <a href="#exams">Exams</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero container">
+      <div class="hero-content">
+        <p class="eyebrow">MY DIGITAL PORTFOLIO</p>
+
+        <h1>
+          Learning, building,<br>
+          <span>and documenting.</span>
+        </h1>
+
+        <p class="hero-description">
+          A digital portfolio for tracking activities, quizzes,
+          lab reports, weekly accomplishment reports, and exams.
+        </p>
+      </div>
+
+      <aside class="profile-card" aria-label="Profile summary">
+        <div class="profile-avatar">JV</div>
+        <h2>Amerna, Johnmarc V.</h2>
+        <p>Computer Science Student<br>BSCS-3A</p>
+      </aside>
+    </section>
+
+    <section id="activities" class="section section-tinted">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">01 / HOMEWORKS AND ACTIVITIES</p>
+            <h2>Activities</h2>
+          </div>
+          </div>
+
+        <div class="files-container" id="container-activities">
+          <p class="empty-msg">No files uploaded yet.</p>
+        </div>
+
+        <div class="files-container static-files">
+          <div class="file-item-card">
+            <div class="file-item-header">
+              <span class="file-badge">JPG</span>
+            </div>
+
+            <div class="file-info">
+              <div class="file-title">images_7.jpg</div>
+            </div>
+
+            <button
+              type="button"
+              class="view-btn"
+              onclick="openStaticFile('pictures/images_7.jpg', 'images_7.jpg')">
+              Open File
+            </button>
+          </div>
+
+          <div class="file-item-card">
+            <div class="file-item-header">
+              <span class="file-badge">PDF</span>
+            </div>
+
+            <div class="file-info">
+              <div class="file-title">Module-Activity-1.pdf</div>
+            </div>
+
+            <button
+              type="button"
+              class="view-btn"
+              onclick="openStaticFile(
+                'pictures/Module-Activity-1.pdf',
+                'Module-Activity-1.pdf'
+              )">
+              Open File
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="quizzes" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">02 / ASSESSMENT</p>
+            <h2>Quiz Records</h2>
+          </div>
+        </div>
+
+        <div class="files-container" id="container-quizzes">
+          <p class="empty-msg">No files uploaded yet.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="warlab" class="section section-tinted">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">03 / DOCUMENTATION</p>
+            <h2>Lab Report / Weekly Accomplishment Report</h2>
+          </div>
+        </div>
+
+        <div class="files-container" id="container-warlab">
+          <p class="empty-msg">No files uploaded yet.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="exams" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">04 / ACADEMICS</p>
+            <h2>Exams</h2>
+          </div>
+        </div>
+
+        <div class="files-container" id="container-exams">
+          <p class="empty-msg">No files uploaded yet.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>© 2026 Amerna, Johnmarc V. · Built with HTML, CSS, and JavaScript.</p>
+      <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+        GitHub ↗
+      </a>
+    </div>
+  </footer>
+
+  <!-- File preview modal -->
+  <div
+    id="file-modal"
+    class="modal hidden"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="modal-title">
+
+    <div class="modal-content">
+      <button
+        type="button"
+        class="modal-close"
+        onclick="closeModal()"
+        aria-label="Close modal">
+        &times;
+      </button>
+
+      <h2 id="modal-title">File Preview</h2>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
