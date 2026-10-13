@@ -437,7 +437,7 @@ tr:last-child td {
 }
 
 .footer-content a { 
-  color: var(--color-accent); 
+  color: #2ecc71;
 }
 
 /* ==============================
@@ -650,7 +650,7 @@ tr:last-child td {
   padding: 4px 8px;
   border-radius: 5px;
   color: #fff;
-  background: #2ecc71;
+  background: var(--color-green);
   font-size: 0.7rem;
   font-weight: 800;
 }
@@ -673,12 +673,12 @@ tr:last-child td {
   width: 100%;
   padding: 9px 12px;
   color: #fff;
-  background: #2ecc71;
+  background: var(--color-green);
   font-weight: 700;
 }
 
 .view-btn:hover {
-  background: #1c6dcc;
+  background: #419665;
 }
 
 .delete-btn {
